@@ -1,13 +1,17 @@
 @page
 @model AdminModel
 @{
-    Layout = null;
+    Layout = "~/Pages/Shared/_Layout_Admin.cshtml";
 }
 
 <!DOCTYPE html>
 
 <div>
-    Bulbe
+    <h1>Bulbe</h1>
+
+    <label for="name">Input (4 to 8 characters):</label>
+
+    <input type="text" id="name" name="name" required minlength="1" maxlength="30" size="10">
 
     <form method="post"><button class="btn btn-default">Logout</button></form>
 </div>

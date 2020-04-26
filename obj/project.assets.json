@@ -8553,11 +8553,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cloud - Midgard\\Dev\\Portfolio\\Portfolio.csproj",
+      "projectUniqueName": "D:\\Dev\\Portfolio\\Portfolio.csproj",
       "projectName": "Portfolio",
-      "projectPath": "D:\\Cloud - Midgard\\Dev\\Portfolio\\Portfolio.csproj",
+      "projectPath": "D:\\Dev\\Portfolio\\Portfolio.csproj",
       "packagesPath": "C:\\Users\\Deadry\\.nuget\\packages\\",
-      "outputPath": "D:\\Cloud - Midgard\\Dev\\Portfolio\\obj\\",
+      "outputPath": "D:\\Dev\\Portfolio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Deadry\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -11,7 +11,7 @@
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">@Html.DisplayFor(model => model.SiteTitle)</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">@Html.DisplayFor(model => model.SubTitle)</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">@Html.DisplayFor(model => model.PrimButton)</a>
       </div>
     </div>
   </header>
@@ -86,7 +86,7 @@
     </div>
   </section>
 
-  <!-- Signup Section -->
+  @* <!-- Signup Section -->
   <section id="signup" class="signup-section">
     <div class="container">
       <div class="row">
@@ -103,10 +103,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> *@
 
   <!-- Contact Section -->
-  <section class="contact-section bg-black">
+  <section id="contact" class="contact-section bg-black">
     <div class="container">
 
       <div class="row">

@@ -20564,6 +20564,11 @@
       "FilePath": "d:\\Dev\\Portfolio\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Dev\\Portfolio\\Pages\\Shared\\_Layout_Admin.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout_Admin.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

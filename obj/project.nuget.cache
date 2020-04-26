@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4QMQ7LPGXdtHkEeISON1FopSJuerBY03mWlcGtqJTaLVc9JbX2gSgtbc3rwqz3WIG75wBUnbH+JYow5cCbZ6Qg==",
+  "dgSpecHash": "BzAKLlJq1CumL521uf1JcBr6XRY/XO5iyJCe9dy6xNHuREem1VcAopjJF9TH+HrfOgVzq0JVMZv5Dg/omUkxug==",
   "success": true,
-  "projectFilePath": "D:\\Cloud - Midgard\\Dev\\Portfolio\\Portfolio.csproj",
+  "projectFilePath": "D:\\Dev\\Portfolio\\Portfolio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Deadry\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Deadry\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
