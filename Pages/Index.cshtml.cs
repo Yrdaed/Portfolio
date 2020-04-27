@@ -14,6 +14,10 @@ namespace Portfolio.Pages
         public string SiteTitle { get; set; }
         public string SubTitle { get; set; }
         public string PrimButton { get; set; }
+        public string CvButton { get; set; }
+        public string AboutTitle { get; set; }
+        public string AboutText { get; set; }
+
 
         // Déclarer les paramètres stockés dans la BDD partagés entre _layout et Index :
         [ViewData]
@@ -67,6 +71,27 @@ namespace Portfolio.Pages
             {
                 this.PrimButton = primbuttonParameter.ParameterValue;
             }
+
+            var cvbuttonParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("CvButton"));
+            if (cvbuttonParameter != null)
+            {
+                this.CvButton = cvbuttonParameter.ParameterValue;
+            }
+
+            var abouttitleParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("AboutTitle"));
+            if (abouttitleParameter != null)
+            {
+                this.AboutTitle = abouttitleParameter.ParameterValue;
+            }
+
+            var abouttextParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("AboutText"));
+            if (abouttextParameter != null)
+            {
+                this.AboutText = abouttextParameter.ParameterValue;
+            }
+
+
+
 
             var section1Parameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Section1"));
             if (section1Parameter != null)
