@@ -17,7 +17,15 @@ namespace Portfolio.Pages
         public string CvButton { get; set; }
         public string AboutTitle { get; set; }
         public string AboutText { get; set; }
-
+        public string Project1Title { get; set; }
+        public string Project2Title { get; set; }
+        public string Project3Title { get; set; }
+        public string Project1Text { get; set; }
+        public string Project2Text { get; set; }
+        public string Project3Text { get; set; }
+        public string Address { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
 
         // Déclarer les paramètres stockés dans la BDD partagés entre _layout et Index :
         [ViewData]
@@ -90,8 +98,59 @@ namespace Portfolio.Pages
                 this.AboutText = abouttextParameter.ParameterValue;
             }
 
+            var Project1TitleParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Project1Title"));
+            if (Project1TitleParameter != null)
+            {
+                this.Project1Title = Project1TitleParameter.ParameterValue;
+            }
 
+            var Project2TitleParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Project2Title"));
+            if (Project2TitleParameter != null)
+            {
+                this.Project2Title = Project2TitleParameter.ParameterValue;
+            }
 
+            var Project3TitleParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Project3Title"));
+            if (Project3TitleParameter != null)
+            {
+                this.Project3Title = Project3TitleParameter.ParameterValue;
+            }
+
+            var Project1TextParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Project1Text"));
+            if (Project1TextParameter != null)
+            {
+                this.Project1Text = Project1TextParameter.ParameterValue;
+            }
+
+            var Project2TextParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Project2Text"));
+            if (Project2TextParameter != null)
+            {
+                this.Project2Text = Project2TextParameter.ParameterValue;
+            }
+
+            var Project3TextParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Project3Text"));
+            if (Project3TextParameter != null)
+            {
+                this.Project3Text = Project3TextParameter.ParameterValue;
+            }
+
+            var AddressParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Address"));
+            if (AddressParameter != null)
+            {
+                this.Address = AddressParameter.ParameterValue;
+            }
+
+            var EmailParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Email"));
+            if (EmailParameter != null)
+            {
+                this.Email = EmailParameter.ParameterValue;
+            }
+
+            var PhoneParameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Phone"));
+            if (PhoneParameter != null)
+            {
+                this.Phone = PhoneParameter.ParameterValue;
+            }
 
             var section1Parameter = this.context.Parameters.FirstOrDefault(e => e.ParameterKey.Equals("Section1"));
             if (section1Parameter != null)
