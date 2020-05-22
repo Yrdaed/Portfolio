@@ -20521,6 +20521,16 @@
   "RootNamespace": "Portfolio",
   "Documents": [
     {
+      "FilePath": "d:\\Dev\\Portfolio\\Pages\\Admin\\Edit.cshtml",
+      "TargetPath": "Pages\\Admin\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Dev\\Portfolio\\Pages\\Admin\\Delete.cshtml",
+      "TargetPath": "Pages\\Admin\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Dev\\Portfolio\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -20541,11 +20551,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Dev\\Portfolio\\Pages\\Admin.cshtml",
-      "TargetPath": "Pages\\Admin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Dev\\Portfolio\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -20563,6 +20568,11 @@
     {
       "FilePath": "d:\\Dev\\Portfolio\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Dev\\Portfolio\\Pages\\Admin\\Index.cshtml",
+      "TargetPath": "Pages\\Admin\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

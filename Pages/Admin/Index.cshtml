@@ -1,0 +1,37 @@
+@page
+@model IndexModel
+@{
+    Layout = "~/Pages/Shared/_Layout_Admin.cshtml";
+}
+
+<!DOCTYPE html>
+
+<div>
+    <h1>Administration</h1>
+
+    <table class="table" id="parametersTable">
+        <thead>
+            <tr>
+                @* <th>@Html.DisplayNameFor(model => model.Parameters[0].ParameterKey)</th> *@
+                <th class="clickable-header" onclick="sortTable(0)">@Html.DisplayNameFor(model => model.Parameters[0].ParameterName)</th>
+                <th class="clickable-header" onclick="sortTable(1)">@Html.DisplayNameFor(model => model.Parameters[0].ParameterValue)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var parameter in Model.Parameters)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(param =>  parameter.ParameterName)</td> 
+                    <td>@Html.DisplayFor(param =>  parameter.ParameterValue)</td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@parameter.ID">Editer</a>
+                        @* <a asp-page="./Delete" asp-route-id="@parameter.ID">Supprimer</a> *@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <form method="post"><button class="btn btn-default">Déconnexion</button></form>
+</div>

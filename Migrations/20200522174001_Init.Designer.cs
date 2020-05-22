@@ -8,8 +8,8 @@ using Portfolio.Data;
 namespace Portfolio.Migrations
 {
     [DbContext(typeof(PortfolioContext))]
-    [Migration("20200424184418_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20200522174001_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,12 +26,34 @@ namespace Portfolio.Migrations
                     b.Property<string>("ParameterKey")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ParameterValue")
+                    b.Property<string>("ParameterName")
                         .HasColumnType("TEXT");
+
+                    b.Property<string>("ParameterValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(500);
 
                     b.HasKey("ID");
 
                     b.ToTable("Parameters");
+                });
+
+            modelBuilder.Entity("Portfolio.Models.User", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Login")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

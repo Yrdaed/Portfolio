@@ -23,7 +23,7 @@ namespace Portfolio
         {
             services.AddRazorPages().AddRazorPagesOptions(options =>
             {
-                options.Conventions.AuthorizePage("/Admin");
+                options.Conventions.AuthorizeFolder("/Admin");
             });
 
             services.AddDbContext<PortfolioContext>(options => options.UseSqlite(Configuration.GetConnectionString("PortfolioContext")));

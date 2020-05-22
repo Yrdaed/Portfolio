@@ -309,7 +309,6 @@ D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.TagHelpers.input.cache
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.TagHelpers.output.cache
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.RazorCoreGenerate.cache
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Account\Login.cshtml.g.cs
-D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Admin.cshtml.g.cs
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
@@ -327,3 +326,6 @@ D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.dll
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.pdb
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Portfolio.genruntimeconfig.cache
 D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout_Admin.cshtml.g.cs
+D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Index.cshtml.g.cs
+D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Edit.cshtml.g.cs
+D:\Dev\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Delete.cshtml.g.cs

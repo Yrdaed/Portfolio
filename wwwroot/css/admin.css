@@ -7,3 +7,7 @@ input,
 label {
     margin: .4rem 0;
 }
+
+.clickable-header {
+    cursor: pointer;
+}

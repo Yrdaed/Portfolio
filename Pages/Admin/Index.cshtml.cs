@@ -8,33 +8,41 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
-namespace Portfolio.Pages
+namespace Portfolio.Pages.Admin
 {
     // Déclarer la classe :
-    public class AdminModel : PageModel
+    public class IndexModel : PageModel
     {
-        private readonly ILogger<AdminModel> logger;
+        private readonly ILogger<IndexModel> logger;
         private readonly PortfolioContext context;
+        public IList<Parameter> Parameters;
+        [BindProperty]
+        public Parameter SiteTitle { get; set; }
+
 
         // Constructeur :
         // var newLogger = new ILogger<AdminModel>();
         // var newContext = new PortfolioContext();
         // var newPage =  new AdminModel(newLogger, newContext); 
-        public AdminModel(ILogger<AdminModel> logger, PortfolioContext context)
+        public IndexModel(ILogger<IndexModel> logger, PortfolioContext context)
         {
             this.logger = logger;
             this.context = context;
         }
 
-        public void OnGet()
+        public async Task OnGetAsync()
         {
+            this.logger.LogInformation("OnGet Called");
+            this.Parameters = await this.context.Parameters.ToListAsync();
         }
 
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToPage("Index");
+            return RedirectToPage("../Index");
         }
     }
 }

@@ -24,8 +24,13 @@ namespace Portfolio.Migrations
                     b.Property<string>("ParameterKey")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ParameterValue")
+                    b.Property<string>("ParameterName")
                         .HasColumnType("TEXT");
+
+                    b.Property<string>("ParameterValue")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(500);
 
                     b.HasKey("ID");
 
