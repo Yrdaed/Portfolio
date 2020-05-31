@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\Deadry\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Deadry\\.nuget\\packages"
-    ]
-  }
-}

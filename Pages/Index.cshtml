@@ -41,7 +41,7 @@
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>@Html.DisplayFor(model => model.Project1Title)</h4>
-            <p class="text-black-50 mb-0">@Html.DisplayFor(model => model.Project1Text)</p>
+            <p class="text-black-50 mb-0 project-content">@Html.DisplayFor(model => model.Project1Text)</p>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">@Html.DisplayFor(model => model.Project2Title)</h4>
-                <p class="mb-0 text-white-50">@Html.DisplayFor(model => model.Project2Text)</p>
+                <p class="mb-0 text-white-50 project-content">@Html.DisplayFor(model => model.Project2Text)</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -74,7 +74,7 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">@Html.DisplayFor(model => model.Project3Title)</h4>
-                <p class="mb-0 text-white-50">@Html.DisplayFor(model => model.Project3Text)</p>
+                <p class="mb-0 text-white-50 project-content">@Html.DisplayFor(model => model.Project3Text)</p>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -113,7 +113,7 @@
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
+              <h4 class="text-uppercase m-0">Adresse</h4>
               <hr class="my-4">
               <div class="small text-black-50">@Html.DisplayFor(model => model.Address)</div>
             </div>
@@ -137,7 +137,7 @@
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
+              <h4 class="text-uppercase m-0">Téléphone</h4>
               <hr class="my-4">
               <div class="small text-black-50">@Html.DisplayFor(model => model.Phone)</div>
             </div>
