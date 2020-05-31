@@ -4,3 +4,4 @@ To initialize the project, you have to create the datatbase with the following c
 
 dotnet ef migrations add Init
 dotnet ef database update
+

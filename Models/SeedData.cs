@@ -63,7 +63,7 @@ namespace Portfolio.Models
                     },
                     new Parameter
                     {
-                        ParameterKey = "CVButton",
+                        ParameterKey = "CvButton",
                         ParameterName = "My CV Button",
                         ParameterValue = "My CV"
                     },
