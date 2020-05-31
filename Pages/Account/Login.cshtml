@@ -10,15 +10,15 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/css/login.css"/>
-    <title>Index</title>
+    <title>Admin Page</title>
 </head>
 <body>
     <div class="login">
-        <h1>Login</h1>
+        <h1>Administration</h1>
         <form method="post" asp-page="Index">
-            <input type="text" placeholder="Username" asp-for="@Model.Username" />
-            <input type="password" placeholder="Password" asp-for="@Model.Password" />
-            <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+            <input type="text" placeholder="Utilisateur" asp-for="@Model.Username" />
+            <input type="password" placeholder="Mot de passe" asp-for="@Model.Password" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Connexion</button>
         </form>
         @Model.Msg
     </div>

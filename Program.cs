@@ -1,12 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Portfolio.Data;
 using Portfolio.Models;
 
 namespace Portfolio
@@ -23,6 +21,8 @@ namespace Portfolio
 
                 try
                 {
+                    var db = services.GetRequiredService<PortfolioContext>();
+                    db.Database.Migrate();
                     SeedData.Initialize(services);
                 }
                 catch (Exception ex)
