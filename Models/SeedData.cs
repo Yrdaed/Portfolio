@@ -139,7 +139,7 @@ namespace Portfolio.Models
                 context.Users.AddRange(
                     new User
                     {
-                        Login = "deadry",
+                        Login = "Admin",
                         Password = "P@ssw0rd"
                     }
                 );
